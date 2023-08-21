@@ -1,13 +1,14 @@
-@font-face {
-  font-family: "myFont";
-  src: url("myFont.woff2");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  font-family: "myFont", "Bitstream Vera Serif", serif;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
 }
 
 .nav {
@@ -23,11 +24,13 @@
 .nav h1 {
   font-size: 2vw;
   font-weight: 800;
+  color: #ff745c;
 }
 
 .nav2 {
   display: flex;
   gap: 4vw;
+  align-items: center;
 }
 
 .nav2 h4 {
@@ -39,6 +42,57 @@
   font-style: 2vw;
 
   display: none;
+}
+
+.nav2 button{
+  background-color: #ff745c;
+  padding: .5vw 1vw;
+  font-size: 1vw;
+  font-weight: 800;
+  border-radius: 5px;
+  color: aliceblue;
+  border: none;
+}
+
+
+
+.content {
+  height: calc(100vh - 60px);
+  width: 100%;
+  display: flex;
+  /* background-color: burlywood; */
+}
+
+.red {
+  width: 55%;
+  height: 100%;
+  /* background-color: rgb(172, 20, 96); */
+  padding: 9vw 4vw;
+}
+
+.red p {
+  /* color: aliceblue; */
+  margin: 4vh 0vh;
+}
+.red button{
+  background-color: #ff745c;
+  padding: 1vw 2vw;
+  font-size: 1.5vw;
+  font-weight: 800;
+  border-radius: 5px;
+  color: aliceblue;
+  border: none;
+}
+
+.blue {
+  width: 45%;
+  height: 100%;
+  /* background-color: rgb(23, 8, 161); */
+}
+
+.blue img{
+  width: 80%;
+  height: 90%;
 }
 
 @media (max-width: 600px) {
@@ -57,8 +111,4 @@
     display: block;
     font-style: 2vw;
   }
-}
-
-.content {
-  background-color: burlywood;
 }
