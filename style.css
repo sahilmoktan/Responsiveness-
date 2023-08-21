@@ -1,8 +1,64 @@
-* {
-    padding: 0;
-    margin: 0;
+@font-face {
+  font-family: "myFont";
+  src: url("myFont.woff2");
 }
 
-.nav{
-    background-color: aqua;
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+}
+
+.nav {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  height: 60px;
+  border-bottom: 2px solid gray;
+}
+
+.nav h1 {
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+.nav2 {
+  display: flex;
+  gap: 4vw;
+}
+
+.nav2 h4 {
+  font-size: 1vw;
+  font-weight: 550;
+}
+
+.nav2 i {
+  font-style: 2vw;
+
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 2.5vw;
+  }
+  .nav h1 {
+    font-size: 4vw;
+  }
+
+  .nav2 h4 {
+    display: none;
+    font-size: 2.5vw;
+  }
+  .nav2 i {
+    display: block;
+    font-style: 2vw;
+  }
+}
+
+.content {
+  background-color: burlywood;
 }
